@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+main{
+    background-image: url('Book.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    color: rgba(241, 122, 25, 0.4);
+    text-align: center;
+}
+/*#leftCorner{
+    float: left;
+}*/
+.BookDiv{
+    text-align: left;
+    align-items: center;
+    background-color: rgba(241, 122, 25, 0.2);
+    display: inline-block;
+    width: 12%;
+    margin: 65px 30px 20px 30px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    vertical-align: text-top;
+    min-height: 500px;
+}
+.BookDiv h3{
+    margin: 10px;
+}
+.BookDiv:hover{
+    color: rgb(241, 122, 25);
+    border: 1px solid orangered;
+}
+.BookDiv img {
+    margin: 10px;
+    width: 80%;
+    border: 1px solid orange;
+}
+.BookDiv a img{
+    display: none;
+}
+
+#BooksSpace{
+    text-align: center; /*ako je u NAVU add to basket BUTTON*/
+    margin-bottom: 15px;
+}
+#KORPA{
+    float: right;
+    width: 10%;
+}
+#KORPA a span{
+    font-family: 'Courier New', Courier, monospace;
+}
+#KORPA img{
+    width: 22%;
+    height: 8%;
+    float: right;
+    border-radius: 35%;
+}
+nav{
+    width: 100%;
+    background-color: #d89a14;
+    position: fixed;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+nav ul li a:hover{
+    background-color: #ffd900;
+    color: rgb(3, 112, 155);
+}
+#welcome{
+    font-size: 22px;
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+}
+#readMore{
+    padding: 5px 15px;
+    float: right;
+    background-color: rgba(255, 99, 71, 0.4);
+    color: rgb(238, 238, 10);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+#readMore:hover{
+    color: yellow;
+    background-color:rgba(255, 99, 71, 1);
+}
+#readMore a{
+    text-decoration: none;
+}
+#readMoreUsers{
+    font-style: italic;
+    text-align: right;
+    width: 100%;
+    height: 40px;
+    float: right;
+    background-color: rgba(255, 99, 71, 0.8);
+    color: rgb(238, 238, 10);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+#readMoreUsers:hover{
+    border: orange;
+}
+#readMoreUsers a{
+    text-decoration: none;
+    margin-right: 5px;
+}
+#readMoreUsers img{
+    border: none;
+}
+.BookDiv a img{
+    width: 8%;
+}
+.BookDiv h3, p {
+    margin-left: 2px;
+}
+
+#bold{
+    font-weight: bold;
+    font-style: italic;
+}
+#BooksSpace h2{
+    float: left;
+    color: cornflowerblue;
+}
+#b{
+    font-weight: bold;
+}
+#change {
+    float: right;
+    border: solid 2px cornflowerblue;
+    color: rgb(216, 142, 4);
+    background-color: rgb(245, 222, 179);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+#change:hover {
+    border: solid 2px rgb(226, 150, 7);
+}
+#form{
+    width: 60%;
+}
+#toTop {
+    display: none;
+}
+@media screen and (max-width:1061px) {
+
+    #inline{
+        display: contents;
+    }
+    #email{
+        float: right;
+        display: inline;
+        font-size: 14px;
+    }
+    nav{
+        border-radius: 10px;
+        color: rgb(247, 234, 234);
+    }
+    nav ul li{
+        border-bottom: solid rgb(247, 234, 234) 1px;
+    }
+    .BookDiv p{
+        margin-bottom: 7px;
+    }
+    .BookDiv a img{
+        display: initial;
+        height: 50%;
+        width: 7%;
+    }
+    #welcome{
+        display: none;
+    }
+    #readMoreUsers {
+        background-color:  #ca9013;
+        color: white;
+    }
+    #readMoreUsers:hover {
+        color: white;
+    }
+    .BookDiv{
+        background-color: rgb(245, 222, 179);
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: rgb(241, 122, 25);
+        min-height: initial;
+    }
+    .BookDiv p{
+        width: 20%;
+        display: inline;
+        float: left;
+    }
+    .BookDiv img{
+        width: 20%;
+        float: left;
+    }
+    main{
+        background-image: none;
+        background-color: rgb(247, 234, 234);
+        height: auto;
+    }
+    nav{
+        position: initial;
+        /*da se ne pomera nav sa scrollovanjem*/
+        
+    }
+    nav ul li, nav ul li a{
+        display: block;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .column{
+        /*display: block;*/
+        width: 100%;
+    }
+    section{
+        padding: 30px;
+    }
+    #latest{
+        padding: 0;
+    }
+    #KORPA a span{
+        display: none;
+    }
+    #KORPA {
+        width: 10%;
+    }
+    #KORPA img {
+        width: 75%;
+        border: 1px orange solid;
+    }
+    #KORPA img:hover {
+        border: 2px solid orange;
+    }
+    #KORPA a:hover {
+        background-color: rgb(247, 234, 234);
+    }
+    #toTop {
+        display: block;
+        background-color: cornflowerblue;
+        color: rgb(255, 217, 0);
+        font-weight: bold;
+        width: 20%;
+        border-radius: 20px;
+        text-align: center;
+        border: rgb(70, 132, 247) 3px solid;
+    }
+    #toTop:hover {
+        background-color: rgba(255, 99, 71, 0.7);
+        border: 3px solid rgba(255, 69, 0, 0.8);
+        color: yellow;
+    }
+
+}
